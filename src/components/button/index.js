@@ -5,7 +5,7 @@ function Button(props) {
     // props => { className: "o que alguém passar", href: "/" }
 
     return (
-        <S.Button href={props.href} >
+        <S.Button to={props.href} >
             {props.children}
         </S.Button>
     );
