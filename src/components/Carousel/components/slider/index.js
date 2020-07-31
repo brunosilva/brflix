@@ -12,8 +12,8 @@ const Container = styled.ul`
     top: 0;
     bottom: 0;
     margin: auto;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 100%;
     transform: initial;
     &:before {
       font-size: 30px;
@@ -22,6 +22,7 @@ const Container = styled.ul`
   
   .slick-prev {
     left: 0;
+    background: linear-gradient(90deg, #141414 0%, transparent 100%);
   }
   .slick-next {
     right: 16px;
@@ -43,7 +44,7 @@ const Slider = ({ children }) => (
   <Container>
     <SlickSlider {...{
       dots: false,
-      infinite: false,
+      infinite: true,
       speed: 300,
       centerMode: false,
       variableWidth: true,
