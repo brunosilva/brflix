@@ -39,8 +39,9 @@ function CadastroCategoria() {
   }
 
   useEffect(() => {
-    console.log('alo alo w brasil');
-    const URL_CATEGORY = 'http://localhost:8080/categorias';
+    const URL_CATEGORY = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categorias'
+      : 'https://brflix.herokuapp.com/categorias';
 
     fetch(URL_CATEGORY)
       .then(async (response) => {
