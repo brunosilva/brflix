@@ -7,6 +7,7 @@ function Carousel({
   ignoreFirstVideo,
   category,
 }) {
+  console.log(category);
   const { videos } = category;
   const categoryTitle = category.titulo;
   const categoryColor = category.cor;

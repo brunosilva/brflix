@@ -31,6 +31,4 @@ export const Button = styled(Link)`
         text-align: center;
     }
 `;
-
-
 export default Button;
